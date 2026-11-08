@@ -1,0 +1,21 @@
+// POST is used by Deye even for reading data. This allowlist contains no control endpoints.
+export const DEYE_READ_ENDPOINTS = {
+  getAccountInfo: '/v1.0/account/info',
+  getStations: '/v1.0/station/list',
+  getStation: '/v1.0/station/detail',
+  getStationDevices: '/v1.0/station/device',
+  getStationsWithDevices: '/v1.0/station/listWithDevice',
+  getStationLatest: '/v1.0/station/latest',
+  getStationHistory: '/v1.0/station/history',
+  getStationHistoryPower: '/v1.0/station/history/power',
+  getStationAlerts: '/v1.0/station/alertList',
+  getDevices: '/v1.0/device/list',
+  getDeviceLatest: '/v1.0/device/latest',
+  getDeviceHistory: '/v1.0/device/history',
+  getDeviceHistoryRaw: '/v1.0/device/historyRaw',
+  getDeviceMeasurePoints: '/v1.0/device/measurePoints',
+  getDeviceAlerts: '/v1.0/device/alertList',
+  getBatteryConfiguration: '/v1.0/config/battery',
+  getSystemConfiguration: '/v1.0/config/system',
+  getTimeOfUseConfiguration: '/v1.0/config/tou',
+} as const;

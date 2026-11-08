@@ -1,0 +1,2 @@
+export const DEYE_STATION_ID = 62355189;
+export const DEYE_ITP_STATION_ID = 61845325;
